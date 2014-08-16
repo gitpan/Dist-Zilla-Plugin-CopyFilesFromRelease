@@ -1,7 +1,6 @@
 package Dist::Zilla::Plugin::CopyFilesFromRelease;
-{
-  $Dist::Zilla::Plugin::CopyFilesFromRelease::VERSION = '0.001';
-}
+$Dist::Zilla::Plugin::CopyFilesFromRelease::VERSION = '0.002';
+use 5.008;
 use strict;
 use warnings;
 
@@ -61,13 +60,15 @@ __END__
 
 =pod
 
+=encoding UTF-8
+
 =head1 NAME
 
 Dist::Zilla::Plugin::CopyFilesFromRelease - Copy files from a release (for SCM inclusion, etc.)
 
 =head1 VERSION
 
-version 0.001
+version 0.002
 
 =head1 SYNOPSIS
 
