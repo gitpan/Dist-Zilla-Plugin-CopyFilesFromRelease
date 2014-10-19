@@ -1,5 +1,5 @@
 package Dist::Zilla::Plugin::CopyFilesFromRelease;
-$Dist::Zilla::Plugin::CopyFilesFromRelease::VERSION = '0.002';
+$Dist::Zilla::Plugin::CopyFilesFromRelease::VERSION = '0.003';
 use 5.008;
 use strict;
 use warnings;
@@ -27,6 +27,19 @@ has match => (
     isa        => 'ArrayRef[Str]',
     default    => sub { [] },
 );
+
+around dump_config => sub {
+    my $orig = shift;
+    my $self = shift;
+
+    my $config = $self->$orig;
+
+    $config->{+__PACKAGE__} = {
+        map { $_ => $self->$_ } qw(filename match),
+    };
+
+    return $config;
+};
 
 sub after_release {
     my $self = shift;
@@ -68,7 +81,7 @@ Dist::Zilla::Plugin::CopyFilesFromRelease - Copy files from a release (for SCM i
 
 =head1 VERSION
 
-version 0.002
+version 0.003
 
 =head1 SYNOPSIS
 

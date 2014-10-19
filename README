@@ -1,7 +1,7 @@
 
 
 This archive contains the distribution Dist-Zilla-Plugin-CopyFilesFromRelease,
-version 0.002:
+version 0.003:
 
   Copy files from a release (for SCM inclusion, etc.)
 
