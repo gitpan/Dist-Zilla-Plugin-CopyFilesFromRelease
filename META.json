@@ -4,7 +4,7 @@
       "Graham Knop <haarg@haarg.org>"
    ],
    "dynamic_config" : 0,
-   "generated_by" : "Dist::Zilla version 5.020, CPAN::Meta::Converter version 2.142690",
+   "generated_by" : "Dist::Zilla version 5.021, CPAN::Meta::Converter version 2.142690",
    "license" : [
       "perl_5"
    ],
@@ -29,7 +29,7 @@
             "Dist::Zilla::Role::AfterRelease" : "0",
             "File::Copy" : "0",
             "Moose" : "0",
-            "Moose::Autobox" : "0",
+            "Path::Tiny" : "0",
             "perl" : "5.008",
             "strict" : "0",
             "warnings" : "0"
@@ -56,6 +56,9 @@
          "web" : "https://github.com/haarg/Dist-Zilla-Plugin-CopyFilesFromRelease"
       }
    },
-   "version" : "0.003"
+   "version" : "0.004",
+   "x_contributors" : [
+      "Karen Etheridge <ether@cpan.org>"
+   ]
 }
 
