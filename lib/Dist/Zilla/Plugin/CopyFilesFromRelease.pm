@@ -1,5 +1,5 @@
 package Dist::Zilla::Plugin::CopyFilesFromRelease;
-$Dist::Zilla::Plugin::CopyFilesFromRelease::VERSION = '0.004';
+$Dist::Zilla::Plugin::CopyFilesFromRelease::VERSION = '0.005';
 use 5.008;
 use strict;
 use warnings;
@@ -55,7 +55,7 @@ sub after_release {
         next if -d $file;
 
         my $rel_path = $file->relative($built_in);
-        return
+        next
             unless $rel_path =~ $file_match;
         my $dest = path($root, $rel_path);
         File::Copy::copy("$file", "$dest")
@@ -80,7 +80,7 @@ Dist::Zilla::Plugin::CopyFilesFromRelease - Copy files from a release (for SCM i
 
 =head1 VERSION
 
-version 0.004
+version 0.005
 
 =head1 SYNOPSIS
 

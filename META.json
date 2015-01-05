@@ -4,13 +4,13 @@
       "Graham Knop <haarg@haarg.org>"
    ],
    "dynamic_config" : 0,
-   "generated_by" : "Dist::Zilla version 5.021, CPAN::Meta::Converter version 2.142690",
+   "generated_by" : "Dist::Zilla version 5.030, CPAN::Meta::Converter version 2.143240",
    "license" : [
       "perl_5"
    ],
    "meta-spec" : {
       "url" : "http://search.cpan.org/perldoc?CPAN::Meta::Spec",
-      "version" : "2"
+      "version" : 2
    },
    "name" : "Dist-Zilla-Plugin-CopyFilesFromRelease",
    "prereqs" : {
@@ -52,11 +52,11 @@
       },
       "repository" : {
          "type" : "git",
-         "url" : "https://github.com/haarg/Dist-Zilla-Plugin-CopyFilesFromRelease.git",
-         "web" : "https://github.com/haarg/Dist-Zilla-Plugin-CopyFilesFromRelease"
+         "url" : "https://github.com/karenetheridge/Dist-Zilla-Plugin-CopyFilesFromRelease.git",
+         "web" : "https://github.com/karenetheridge/Dist-Zilla-Plugin-CopyFilesFromRelease"
       }
    },
-   "version" : "0.004",
+   "version" : "0.005",
    "x_contributors" : [
       "Karen Etheridge <ether@cpan.org>"
    ]
